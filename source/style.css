@@ -8,7 +8,24 @@ body {
   padding: 0;
   margin: 0;
 }
-
+small {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+}
+p {
+  margin-bottom: 0;
+}
+a:link {
+  text-decoration: none;
+  margin-bottom: 0;
+}
+a:hover {
+  cursor: pointer;
+}
 .banner {
   position: relative;
   padding-bottom: 56.2%;
@@ -27,38 +44,39 @@ body {
 }
 
 .banner-title {
-  position: absolute;
-  display: flex;
   width: 100%;
-
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px 40px;
-  text-align: center;
+  padding: 20px 20px;
+  text-align: left;
 }
 
 .banner-title h1 {
+  position: relative;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: Arial, sans-serif;
   font-weight: normal;
 }
-/* small calption - optional */
+
 .caption {
-  display: flex;
-  justify-content: end;
-  bottom: 0;
   text-align: center;
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 16px;
   font-style: italic;
 }
-.text-trailer {
-  color: #fff;
-  font-size: 1.2rem;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-}
+
 .character {
-  width: 100px;
+  display: block;
+  margin: 0 auto;
+  width: 65px;
+  padding-top: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.border {
+  border-spacing: 10px 10px;
 }
