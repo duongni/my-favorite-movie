@@ -1,82 +1,106 @@
-body {
-  background: #000;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/988/original/spirited_away_xlg.jpeg?1685585024");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap");
+* {
+  box-sizing: border-box;
 }
-small {
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-style: italic;
-  margin-bottom: 0;
+header {
+  height: 200vh;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
   text-align: center;
 }
-p {
-  margin-bottom: 0;
-}
-a:link {
-  text-decoration: none;
-  margin-bottom: 0;
-}
-a:hover {
-  cursor: pointer;
-}
-.banner {
-  position: relative;
-  padding-bottom: 56.2%;
-  width: 100%;
+.container {
+  clip: rect(0, auto, auto, 0);
   overflow: hidden;
-}
-
-.videoembed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  right: 0;
   width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 35%;
 }
 
-.banner-title {
+.container_solid {
+  background: white;
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;
+  margin: auto;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px 20px;
-  text-align: left;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.banner-title h1 {
-  position: relative;
-  color: #fff;
-  font-size: 1.5rem;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-}
-
-.caption {
+.title_wrapper h1 {
   text-align: center;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-style: italic;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
 }
 
-.character {
+.container_solid .title_wrapper h1 {
+  background: url(/source/images/spirited_away_xlg.jpeg);
+  background-size: 100vw auto;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.container_image {
+  background-image: url(/source/images/end-scene.jpg);
+  background-size: 100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+
+section h2 {
+  font-family: "Fraunces", serif;
+}
+
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+iframe {
   display: block;
   margin: 0 auto;
-  width: 65px;
-  padding-top: 10px;
+  max-width: 100%;
 }
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
-.border {
-  border-spacing: 10px 10px;
+.coder-info {
+  text-align: center;
+}
+.github {
+  text-decoration: none;
+  color: black;
+  opacity: 70%;
+}
+.github:hover {
+  color: rgb(253, 149, 149);
 }
