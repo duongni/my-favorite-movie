@@ -1,88 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap");
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 1vh;
+  background: #0b0103;
 }
 header {
-  height: 200vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+header img {
+  width: 100px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+header ul li a:hover {
+  color: rgb(253, 149, 149);
+  background: #574c4e;
+}
+div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
+.plot {
+  margin: 0 auto;
+  color: white;
+  font-size: 24px;
+  line-height: 1.5;
+}
 h3 {
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
 }
-.container {
-  clip: rect(0, auto, auto, 0);
-  overflow: hidden;
-  position: absolute;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
 
-.container_solid {
-  background: white;
-  top: 0;
-}
-
-.title_wrapper {
-  position: fixed;
-  display: block;
-  margin: auto;
-  width: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.title_wrapper h1 {
-  text-align: center;
-  font-size: 64px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-}
-
-.container_solid .title_wrapper h1 {
-  background: url(/source/images/spirited_away_xlg.jpeg);
-  background-size: 100vw auto;
-  background-position: center;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.container_image {
-  background-image: url(/source/images/end-scene.jpg);
-  background-size: 100vw auto;
-  background-position: center;
-  background-attachment: fixed;
-  top: 100vh;
-}
-
-.container_image .title_wrapper h1 {
-  color: white;
-}
-
-section {
-  min-height: 100vh;
-  padding: 2em;
-  margin: auto;
-  max-width: 800px;
-}
-
-section h2 {
-  font-family: "Fraunces", serif;
-}
-
-section p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-}
 iframe {
   display: block;
   margin: 0 auto;
