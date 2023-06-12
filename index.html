@@ -28,22 +28,13 @@
       />
       <ul>
         <li>
-          <a
-            href="#"
-            alt="Link to main poster"
-            title="link to main poster"
-            class="active"
-            >Poster</a
-          >
-        </li>
-        <li>
-          <a href="#" alt="Link to movie plot" title="Link to movie plot"
+          <a href="#plot" alt="Link to movie plot" title="Link to movie plot"
             >Intro</a
           >
         </li>
         <li>
           <a
-            href="#"
+            href="#photos"
             alt="Link to movie images"
             title="Link to movie images
           "
@@ -51,7 +42,14 @@
           >
         </li>
         <li>
-          <a href="#" alt="Link to Ticket" title="Link to ticket">Ticket</a>
+          <a href="#trailer" alt="movie trailer" title="movie trailer"
+            >Trailer</a
+          >
+        </li>
+        <li>
+          <a href="#ticket" alt="Link to Ticket" title="Link to ticket"
+            >Ticket</a
+          >
         </li>
       </ul>
     </header>
@@ -60,9 +58,10 @@
       src="source/images/landing-image.png"
       alt="main page image"
       class="landing-img mb-5"
+      id="landingpage"
     />
 
-    <div class="plot mb-5 text-center">
+    <div id="plot" class="plot mb-5 text-center">
       In this animated feature by noted Japanese director Hayao Miyazaki,
       10-year-old Chihiro (Rumi Hiiragi) and her parents (Takashi Naitô, Yasuko
       Sawaguchi) stumble upon a seemingly abandoned amusement park. After her
@@ -71,7 +70,7 @@
       beings who need a break from their time spent in the earthly realm, and
       that she must work there to free herself and her parents.
     </div>
-    <div class="movie-photos">
+    <div id="photos" class="movie-photos">
       <img
         src="source/images/ae_SpiritedAway.jpg"
         alt="Chihiro stands in front of castle for the firs time"
@@ -110,7 +109,7 @@
         class="haku-chihiro"
       />
     </div>
-    <p class="plot mb-5 text-center">
+    <p id="trailer" class="plot mb-5 text-center">
       Over the course of her journey in this alternate world, Chihiro learns
       valuable lessons about the fundamental nature of the universe as well as
       the importance of friendship. Through the use of soft world-building,
@@ -129,6 +128,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
       class="mt-5 mb-5"
+      id="trailer"
     ></iframe>
 
     <div class="d-grid gap-2 col-6 mx-auto">
@@ -136,6 +136,7 @@
         class="btn btn-dark d-block btn-lg"
         href="https://gkids.com/ghiblifest/#line-up"
         title="Link to Studio Ghibli Fest 2023"
+        id="ticket"
         >Grab your ticket</a
       >
     </div>
