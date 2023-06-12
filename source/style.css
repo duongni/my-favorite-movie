@@ -88,7 +88,7 @@ iframe {
 .no-face-monster:hover,
 .haku-chihiro:hover {
   filter: contrast(60%);
-  transform: scale(1.2);
+  transform: scale(2);
 }
 
 .movie-photos {
